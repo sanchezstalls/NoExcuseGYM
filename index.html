@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+    <title>No Excuse GYM</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Fugaz+One&family=Walter+Turncoat&display=swap"
+    rel="stylesheet"
+  />
+ 
+  <link rel="stylesheet" href="" class="css/style.css" />
+  <style>
+    /* CSS RESET */
+    body {
+      font-family: "Bangers", cursive;
+      font-family: "Fugaz One", cursive;
+      font-family: "Walter Turncoat", cursive;
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      background: url("img/dk.jpg");
+      background-size: 1800px;
+      background-repeat: no-repeat;
+     
+    }
+
+    .left {
+      display: inline-block;
+      /* border: 2px solid red; */
+      position: absolute;
+      left: 30px;
+      top: -10px;
+    }
+    .left img {
+      width: 165px;
+      filter: invert(100%);
+      padding: 29px 29px;
+
+      /* transform: scale(2.2);  */
+    }
+    .left img:hover{
+      transform: scale(1.2);
+
+    }
+    
+    .left div {
+      line-height: 1px;
+      text-align: center;
+      font-size:23px;
+      
+      
+    }
+
+    .mid {
+      position: relative;
+      width: 50%;
+      margin: 0px auto;
+      /* border: 2px solid green; */
+    }
+
+    .right {
+      position: absolute;
+      right: 34px;
+      top: 20px;
+      display: inline-block;
+      /* border: 2px solid yellow; */
+    }
+    /* .right img{
+        width:200px;
+        filter:invert(100%)
+    } */
+    .navbar {
+      display: inline-block;
+    }
+    .navbar li {
+      display: inline-block;
+      font-size: 25px;
+    }
+    .navbar li a {
+      color: #e1bdbd;
+      text-decoration: none;
+      padding: 1px 16px;
+      margin: 2px 6px;
+    }
+    .navbar li a:hover,
+    .navbar a.ctive {
+      text-decoration: underline;
+      color: rgb(228, 228, 194);
+    }
+    .btn {
+      margin: -2px 6px;
+      color: white;
+      background-color: black;
+      padding: 2px 7px;
+      border: 2px solid rgb(143, 140, 138);
+      border-radius: 10px;
+      font-size: 17px;
+      font-family: "Bangers", cursive;
+      font-family: "Fugaz One", cursive;
+      font-family: "Walter Turncoat", cursive;
+      cursor: pointer;
+
+      cursor: pointer;
+    }
+    .btn:hover {
+      color: rgb(10, 10, 10);
+      background-color: rgb(231, 218, 218);
+    }
+    .container {
+      border: 2px solid white;
+      margin: 230px 47px;
+      padding: 52px 71px;
+      width: 25%;
+      border-radius: 30px;
+    }
+    .form-group input {
+      text-align: center;
+      display: block;
+      width: 110%;
+      padding: 0px 1px;
+      border: 1px solid;
+      margin: 11px auto;
+      font-size: 27px;
+      border-radius: 10px;
+      font-family: "Bangers", cursive;
+      font-family: "Fugaz One", cursive;
+      font-family: "Walter Turncoat", cursive;
+    }
+    .container h1 {
+      text-align: center;
+      color: rgb(175, 170, 170);
+    }
+    .container button:hover {
+      display: block;
+      width: 33%;
+      margin: 34px auto;
+      transform: scale(1.2);
+    }
+
+    .navbar :hover {
+      -ms-transform: scale(1.5); /* IE 9 */
+      -webkit-transform: scale(1.5); /* Safari 3-8 */
+      transform: scale(1.2);
+    }
+    @media only screen and (max-width:800px) {
+  /* For tablets: */
+  .mid,.navbar {
+    width: 80%;
+    padding: 0;
+  }
+}
+  @media only screen and (max-width:800px) {
+  .right {
+    width: 100%;
+  }
+}
+  @media only screen and (max-width:800px) {
+  .left {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .mid,.navbar {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .left {
+    width: 100%;
+  }
+}
+   
+    
+  </style>
+  <body>
+    <header class="header">
+      <!--  for logo... -->
+      <div class="left">
+        <img src="img/men1.png" alt=""  style="max-width:100%;height:auto"; />
+        <div >No Excuse GYM</div>
+      </div>
+      <!-- for navigation bar -->
+      <div class="mid">
+        <ul class="navbar" >
+          <li ><a href="#" class="active">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Workout</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- for button -->
+      <div class="right">
+        <button class="btn">Call Us</button>
+        <button class="btn">Email Us</button>
+        <!-- <img src="img/sym.png" alt=""> -->
+      </div>
+    </header>
+    <div class="container">
+      <h1>
+        It’s time for a change again
+        <form action="noaction.php">
+          <div class="form-group">
+            <input type="text" placeholder="Enter your Name" />
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Enter your Age" />
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Enter your Age" />
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Enter your Location" />
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Enter your Email" />
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Enter your Phone Number" />
+          </div>
+          <button class="btn">submit</button>
+        </form>
+      </h1>
+    </div>
+  </body>
+</html>
